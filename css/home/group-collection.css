@@ -1,0 +1,100 @@
+.group-collection {
+  padding-bottom: 8rem;
+  color: var(--dark);
+}
+.group-collection__subtitle {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 172.69%;
+  text-align: center;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.group-collection__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4.8rem;
+}
+.group-collection__grid {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 34% 40%;
+  gap: 0 10%;
+  justify-content: center;
+}
+.group-collection__banner .banner__img {
+  width: 100%;
+}
+
+.group-collection__slider {
+  height: 720px;
+}
+.group-collection__slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+.group-collection__slider .groupProductRender .card__img {
+  width: 100%;
+  /* display: block; */
+  /* object-fit: cover; */
+}
+.group-collection__slider .groupProductRender2 .card__img {
+  width: 100%;
+  /* display: block; */
+  /* object-fit: cover; */
+}
+
+.group-collection__slider .swiper-slide {
+  height: calc((100% - 40px) / 2) !important;
+  width: 213px !important;
+  height: 365px;
+}
+.group-collection__slider .swiper-button-next {
+  right: -5px;
+}
+.group-collection__slider .swiper-button-prev {
+  left: -5px;
+}
+.group-collection__banner a {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 160%;
+  text-align: center;
+  color: var(--dark);
+  margin-top: 1.6rem;
+}
+.group-collection__grid--reverse {
+  grid-template-columns: 40% 34%;
+}
+/* media */
+
+@media (max-width: 600px) {
+  .group-collection {
+    padding-bottom: 4rem;
+  }
+  .group-collection__grid {
+    grid-template-columns: 100%;
+  }
+  .group-collection__title {
+    font-size: 32px;
+    line-height: 110%;
+    margin-bottom: 1.6rem;
+  }
+  .group-collection__slider {
+    height: 286px;
+    margin-top: 1.6rem; 
+  }
+  .group-collection__slider .swiper-slide {
+   height: 100% !important;
+   width: 142px !important;
+  }
+  .group-collection__grid--reverse .group-collection__banner {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}

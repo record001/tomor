@@ -16,18 +16,497 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Mukta+Vaani:wght@300;400;500;600&display=swap"
       rel="stylesheet" />
 
+      <!-- Link Swiper's CSS -->
+    <link   rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"  />
+
+
+
 
       <!-- inner styles -->
       <link rel="stylesheet" href="./css/resets.css">
       <link rel="stylesheet" href="./css/global.css">
+      <link rel="stylesheet" href="./css/home.css">
 
       <!-- inner JS -->
       <script src="./js/global.js" defer></script>
+      <script src="./js/data.js" defer></script>
+      <script src="./js/home.js" defer></script>
 
     <title>TOMOR | HomePage</title>
   </head>
   <body>
 
-    
+    <div class="modal">
+      <i class="close-modal fa-solid fa-xmark"></i>
+      <ul class="modal__list">
+        <li class="modal__item"><a class="modal__link" href="./index.html" target="_blank">Home</a></li>
+        <li class="modal__item">
+          <a class="modal__link" href="./plp.html" target="_blank">Product List</a>
+        </li>
+        <li class="modal__item">
+          <a class="modal__link" href="./pdp.html" target="_blank">Product Detail</a>
+        </li>
+        <li class="modal__item"><a class="modal__link" href="#!">Cart</a></li>
+      </ul>
+    </div>
+
+    <header class="header">
+      <div class="container">
+
+        <div class="header__top-bar">
+          <div class="header__search">
+             <input type="text" placeholder="search" >
+              <img src="./image/home/search.svg" alt="search">
+          </div>
+
+          <img class="burger" src="./image/home/burger.svg" alt="burger">
+
+        <a href="#!"><img class="header__logo" src="./image/home/logo.svg" alt="logo"></a>
+          
+        <img class="bag" src="./image/home/bag.svg" alt="bag">
+
+          <div class="header__cta">
+            <img src="./image/home/account.svg" alt="account">
+            <img src="./image/home/heart.svg" alt="heart">
+            <img src="./image/home/bag.svg" alt="bag">
+          </div>
+             
+      </div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#!">New</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Designers</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Clothes</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Shoes</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Accessories</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Bags</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Jewlery</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Beauty</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Editorial</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Sale</a></li>
+        </ul>
+      </nav>
+      </div>
+      
+    </header>
+
+
+    <main>
+      <section class="hero">
+        <div class="hero__top-bar">
+           <div class="container">
+            <marquee  direction="left">
+              <ul class="hero__nav">
+               
+                <li class="hero__nav__list"><a class="hero__nav__link" href="#!">New arrivals </a></li>
+                <span>・</span>
+                <li class="hero__nav__list"><a class="hero__nav__link" href="#!">Our spring/summer baG collectioin</a></li>
+                <span>・</span>
+                <li class="hero__nav__list"><a class="hero__nav__link" href="#!">Sustainable fashion</a></li>
+                <span>・</span>
+                <li class="hero__nav__list"><a class="hero__nav__link" href="#!">Best beauty products  </a></li>
+                <span>・</span>
+                <li class="hero__nav__list"><a class="hero__nav__link" href="#!"> Night time skin routine    </a></li>
+                <span>・</span>
+                <li class="hero__nav__list"><a class="hero__nav__link" href="#!">  comfort & style   </a></li>
+                <span>・</span>
+                <li class="hero__nav__list"><a class="hero__nav__link" href="#!">  Just in high heels     </a></li>
+            </ul>
+              </marquee>
+              
+
+          </div> 
+
+             
+        </div>
+
+        <div class="container">
+          <div class="hero__banner">
+            <div class="hero__content">
+              <h4>What’s New</h4>
+
+              <h2>Spring has sprung</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+              <a href="#!" class="hero__cta">Shop The Story <img src="./image/home/arrow-right.svg" alt="arrow-right"></a>
+            </div>
+
+            <div class="hero__image">
+                <img src="./image/home/home-hero.png" alt="stylish girl">
+            </div>
+          </div>    
+        </div>     
+
+            
+
+      </section>
+
+      <section class="new-collection">
+        <div class="container">
+            <div class="new-collection__grid">
+              <div class="new-collection__content">
+                <h4>YOU’VE ARRIVED</h4>
+                <h2>New Arrivals</h2>
+                <p>New styles just in, shop our latest arrivals.</p>
+                <a href="#!">Shop Now <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+              </div>
+
+              <div class="swiper newCollectionSwiper">
+                <div class="swiper-wrapper newProductRender">
+                  <!-- <div class="swiper-slide new-collection__card">
+                    <img class="heart" src="./image/home/heart-full.svg" alt="heart">
+                    <img src="./image/home/dress-blue.png" alt="dress-blue">
+                    <div class="card__text">
+                      <h4>Gucci</h4>
+                      <p>Zipper Mini Dress</p>
+                      <p>$879.00</p>
+                    </div>
+                  </div> -->
+                 
+                 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+              
+
+              </div>
+            </div>
+            
+            
+        </div>     
+      </section>
+
+      <section class="selected-collection">
+        <div class="container">
+           <div class="selected-collection__grid">
+               <div class="selected-collection__content">
+                  <h4>Best sellers</h4>
+                  <h2>Selected Collections</h2>
+
+                  <img class="luxe" src="./image/home/luxe.png" alt="luxe">
+
+                  <div class="selected-collection__cta">
+                    <h3>Luxe Facial</h3>
+                    <a href="#!">Shop Now <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+                  </div>
+               </div> 
+               
+               <div class="selected-collection__card">
+                <img class="luxe" src="./image/home/spring-edit.png" alt="spring-edit">
+
+                <div class="selected-collection__cta">
+                  <h3>The Spring Edit</h3>
+                  <a href="#!">Shop Now <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+                </div>
+               </div>
+           </div>    
+           
+          
+        </div>  
+        
+        
+        <div class="selected-collection__text">
+          
+            <p>our misson</p>
+
+            <div class="selected-collection__cta">
+              <h3>Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.</h3>
+              <a href="#!">Sustainability Initiative <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+            </div>    
+              
+       </div>
+      </section>
+
+      <section class="group-collection">
+        <p class="group-collection__subtitle">New in</p>
+        <h2 class="group-collection__title">Spring dresses</h2>
+        <div class="group-collection__grid">
+          <div class="group-collection__banner">
+            <img class="banner__img" src="./image/home/spring-dress.png" alt="spring-dress">
+
+            <a href="#!">Shop Now <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+          </div>
+
+          <div class="group-collection__slider">
+            <div class="swiper groupCollectionSwiper">
+              <div class="swiper-wrapper groupProductRender">
+                <!-- <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div> -->
+              </div>
+              <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="banner-slider">
+        <div class="container">
+                
+           
+          <p class="group-collection__subtitle">FROM THE EDITOR’S DESK</p>
+          <h2 class="group-collection__title">Classic Scents by Chanel</h2>
+
+          <div class="banner-slider__wrapper">
+            <div class="swiper bannerSlider">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide banner-slider__grid">
+                  <div class="banner__img">
+                    <picture>
+                      <source media="(max-width:600px)" srcset="./image/home/banner-slider-mob.png">
+                      <img src="./image/home/banner-slider-img.png" alt="Flowers" >
+                    </picture>
+                  
+                  </div>
+
+                  <div class="banner__card">
+                    <img class="heart" src="./image/home/heart-empty.svg" alt="heart">
+                    <img src="./image/home/chanel.png" alt="chanel">
+                    <h2>Chanel</h2>
+                    <p>Eau de Parfum</p>
+                    <p>$879.00</p>
+                  </div>
+                </div>
+                <div class="swiper-slide banner-slider__grid">
+                  <div class="banner__img">
+                    <picture>
+                      <source media="(max-width:600px)" srcset="./image/home/banner-slider-mob.png">
+                      <img src="./image/home/banner-slider-img.png" alt="Flowers" >
+                    </picture>
+                  
+                  </div>
+
+                  <div class="banner__card">
+                    <img class="heart" src="./image/home/heart-empty.svg" alt="heart">
+                    <img src="./image/home/chanel.png" alt="chanel">
+                    <h2>Chanel</h2>
+                    <p>Eau de Parfum</p>
+                    <p>$879.00</p>
+                  </div>
+                </div>
+                <div class="swiper-slide banner-slider__grid">
+                  <div class="banner__img">
+                    <picture>
+                      <source media="(max-width:600px)" srcset="./image/home/banner-slider-mob.png">
+                      <img src="./image/home/banner-slider-img.png" alt="Flowers" >
+                    </picture>
+                  
+                  </div>
+
+                  <div class="banner__card">
+                    <img class="heart" src="./image/home/heart-empty.svg" alt="heart">
+                    <img src="./image/home/chanel.png" alt="chanel">
+                    <h2>Chanel</h2>
+                    <p>Eau de Parfum</p>
+                    <p>$879.00</p>
+                  </div>
+                </div>
+
+                
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+      </div> 
+      </section>
+
+      <section class="group-collection">
+        <p class="group-collection__subtitle">Seasonal</p>
+        <h2 class="group-collection__title">Floral edit</h2>
+        <div class="group-collection__grid group-collection__grid--reverse">
+          
+
+          <div class="group-collection__slider ">
+            <div class="swiper groupCollectionSwiper2">
+              <div class="swiper-wrapper groupProductRender2">
+                <!-- <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div> -->
+              </div>
+              <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+          <div class="group-collection__banner ">
+            <img class="banner__img" src="./image/home/floral.png" alt="spring-dress">
+
+            <a href="#!">Shop Now <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="designers">
+        <div class="container">
+          <p class="group-collection__subtitle">Editor’s pick</p>
+          <h2 class="group-collection__title">Our Favorite Designers</h2> 
+
+          <div class="designers__slider">
+            <div class="swiper designersSwiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <img src="./image/home/cucci.png" alt="cucci">
+                  <h3>Gucci</h3>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/home/aleksandr.png" alt="Alexander Wang">
+                  <h3>Alexander Wang</h3>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/home/stella.png" alt="Stella McCartney">
+                  <h3>Stella McCartney</h3>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/home/Chloe.png" alt="Chloé">
+                  <h3>Chloé</h3>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/home/cucci.png" alt="cucci">
+                  <h3>Gucci</h3>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/home/aleksandr.png" alt="Alexander Wang">
+                  <h3>Alexander Wang</h3>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/home/stella.png" alt="Stella McCartney">
+                  <h3>Stella McCartney</h3>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/home/Chloe.png" alt="Chloé">
+                  <h3>Chloé</h3>
+                </div>
+                
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>     
+      </section>
+
+      <section class="blog">
+        <div class="container">
+            <div class="blog__grid">
+
+              <div class="blog__content">
+                <h2>Toward Blog</h2>
+                <a href="#!">Read All Stories <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+              </div>
+
+              <div class="blog__card">
+                <img src="./image/home/blog1.jpg" alt="blog1">
+                <span>Fashion</span>
+                <h4> 7 Boots to Invest This Winter</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <a href="#!">Read More <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+              </div>
+
+              <div class="blog__card">
+                <img src="./image/home/blog2.jpg" alt="blog1">
+                <span>Fashion</span>
+                <h4> 5 Responsible Brands Making the Coziest Loungue Wear</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+
+                <a href="#!">Read More <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+              </div>
+
+              <div class="blog__card">
+                <img src="./image/home/blog1.jpg" alt="blog1">
+                <span>Fashion</span>
+                <h4> 7 Winter Wardrobe Essentials to buy Now</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+
+                <a href="#!">Read More <img src="./image/home/arrow-right.svg" alt="arrow"></a>
+              </div>
+            </div>
+
+        </div>     
+      </section>
+    </main>
+
+
+    <footer class="footer">
+     <div class="container ">
+      <div class="footer__wrapper">
+
+     
+        <h2 class="footer__title">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </h2>    
+        
+        <div class="footer__form">
+          <h4>Sign up for toward updates</h4>
+          <p>Receiving our newsletter with access to our latest collections, events and news.</p>
+
+          <div class="form__input">
+            <input type="email" placeholder="Email Address">
+            <img src="./image/home/arrow-right-white.svg" alt="arrow-right">
+          </div>
+
+          <div class="footer__socials">
+            <a href="#!"><img src="./image/home/instagram.svg" alt="instagram"></a>
+            <a href="#!"><img src="./image/home/facebook.svg" alt="facebook"></a>
+          </div> 
+
+         
+        </div>
+
+        <div class="footer__nav">
+
+          <ul class="footer__nav__list">
+            <h4 class="footer__nav__title">Customer Care</h4>
+            <li><a href="#!">FAQ</a></li>
+            <li><a href="#!">Shipping & Returns</a></li>
+            <li><a href="#!">Contact</a></li>
+          </ul>
+          <ul class="footer__nav__list">
+            <h4 class="footer__nav__title">Company</h4>
+            <li><a href="#!">About Us</a></li>
+            <li><a href="#!">Journal</a></li>
+            <li><a href="#!">Press</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+       <p class="footer__brand">© 2021 Toward Brand</p>
+
+     </div>   
+     
+    </footer>
+
+
+
+
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

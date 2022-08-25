@@ -1,0 +1,103 @@
+.selected-collection {
+    padding-bottom: 8rem;
+}
+.selected-collection__grid {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 37.5% 45.6%;
+  gap: 0 10%;
+  color: var(--dark);
+}
+.selected-collection__content h4 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-transform: uppercase;
+}
+.selected-collection__content h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 1rem 0 6.6rem;
+}
+.selected-collection__cta {
+    margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selected-collection__cta h3 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 120%;
+}
+.selected-collection__cta a {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 160%;
+    color: var(--dark);
+}
+.selected-collection__cta a img{
+   margin-left: 1.2rem;
+}
+.luxe {
+  width: 100%;
+}
+
+.selected-collection__text {
+    margin-top: 8rem;
+    padding: 5.2rem  17.5rem 7.8rem;
+    background-color: #FFF5EB;
+}
+.selected-collection__text h3 {
+    width: 78.6rem;
+}
+
+
+
+/* media******************** */
+
+@media(max-width:600px) {
+    .selected-collection {
+        padding-bottom: 4rem;
+    }
+    .selected-collection__grid {
+        width: 100%;
+        grid-template-columns: 100%;
+    }
+    .selected-collection__content h4 {
+        font-size: 1.6rem;
+        line-height: 2.0rem;
+    }
+    .selected-collection__content h2 {
+        font-size: 3.2rem;
+        line-height: 110%;
+        margin: 0.9rem 0 1.6rem;
+    }
+    .selected-collection__cta h3 {
+        font-weight: 600;
+        font-size: 2.0rem;
+        line-height: 128%;
+    }
+    .selected-collection__cta {
+        margin-top: 1rem;
+        margin-bottom: 2.2rem;
+    }
+    .selected-collection__text {
+        margin-top: 4rem;
+        padding:2.4rem 1.6rem;
+        background-color: #FFF5EB;
+    }
+    .selected-collection__text .selected-collection__cta {
+        flex-direction: column;
+    }
+    .selected-collection__text h3 {
+        width: 100%;
+        margin-bottom: 3.4rem;
+    }
+    .selected-collection__text a {
+       margin-right: auto;
+    }
+}
