@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/67f25412d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Mukta+Vaani:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+
+      <!-- Link Swiper's CSS -->
+    <link   rel="stylesheet"    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"  />
+
+
+
+
+      <!-- inner styles -->
+      <link rel="stylesheet" href="./css/resets.css">
+      <link rel="stylesheet" href="./css/global.css">
+      <link rel="stylesheet" href="./css/plp.css">
+
+      <!-- inner JS -->
+      <script src="./js/global.js" defer></script>
+      <script src="./js/data.js" defer></script>
+      <script src="./js/plp.js" defer></script>
+
+    <title>TOMOR | Product List</title>
+  </head>
+  <body>
+
+    <div class="modal">
+      <i class="close-modal fa-solid fa-xmark"></i>
+      <ul class="modal__list">
+        <li class="modal__item"><a class="modal__link" href="./index.html" target="_blank">Home</a></li>
+        <li class="modal__item">
+          <a class="modal__link" href="./plp.html" target="_blank">Product List</a>
+        </li>
+        <li class="modal__item">
+          <a class="modal__link" href="./pdp.html" target="_blank">Product Detail</a>
+        </li>
+        <li class="modal__item"><a class="modal__link" href="#!">Cart</a></li>
+      </ul>
+    </div>
+
+    <header class="header">
+      <div class="container">
+
+        <div class="header__top-bar">
+          <div class="header__search">
+             <input type="text" placeholder="search" >
+              <img src="./image/home/search.svg" alt="search">
+          </div>
+
+          <img class="burger" src="./image/home/burger.svg" alt="burger">
+
+        <a href="#!"><img class="header__logo" src="./image/home/logo.svg" alt="logo"></a>
+          
+        <img class="bag" src="./image/home/bag.svg" alt="bag">
+
+          <div class="header__cta">
+            <img src="./image/home/account.svg" alt="account">
+            <img src="./image/home/heart.svg" alt="heart">
+            <img src="./image/home/bag.svg" alt="bag">
+          </div>
+             
+      </div>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#!">New</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Designers</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Clothes</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Shoes</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Accessories</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Bags</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Jewlery</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Beauty</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Editorial</a></li>
+          <li class="nav__item"><a class="nav__link" href="#!">Sale</a></li>
+        </ul>
+      </nav>
+      </div>
+      
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>  Gucci</h1>
+            <div class="hero__content">
+                <p>Under the new vision of creative director Alessandro Michele, the House has redefined luxury for the 21st century, further reinforcing its position as one of the world’s most desirable fashion houses.</p>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+
+                <div class="product__for-wrap">
+                    <div class="product__for">
+                        <img src="./image/plp/people.svg" alt="people">
+                        <span>People</span>
+                    </div>
+                    <div class="product__for">
+                        <img src="./image/plp/environment.svg" alt="environment">
+                        <span>Enviornment</span>
+                    </div>
+                    <div class="product__for">
+                        <img src="./image/plp/animal.svg" alt="animal">
+                        <span>Animal</span>
+                    </div>
+                </div>
+
+                <div class="product__filter">  
+                    <button class="filter"><img src="./image/plp/minus.svg" alt="minus">Filter</button>
+                    <button class="sort"><img src="./image/plp/plus.svg" alt="plus">Sort by</button>
+                </div>
+
+                <div class="products__grid">
+
+                    <div class="product__type">
+
+                      <div class="menu">
+                        <h4>Categories</h4>
+                        <div class="menu__icons">
+                          <img class="icon" src="./image/plp/down.svg" alt="down">
+                        </div>
+                      </div>
+                      <ul class="content">
+                        <li class="content__item"><a class="content__link" href="#!">New</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Clothes</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Shoes</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Accessories</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Bags</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Jewlery</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Beauty</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Sale</a></li>
+                      </ul>
+
+                      <div class="menu">
+                        <h4>Color</h4>
+                        <div class="menu__icons">
+                          <img class="icon" src="./image/plp/down.svg" alt="down">
+                        </div>
+                      </div>
+                      <ul class="content">
+                        <li class="content__item"><a class="content__link" href="#!">White</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Black</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Gold</a></li>
+                        
+                      </ul>
+
+                      <div class="menu">
+                        <h4>Size</h4>
+                        <div class="menu__icons">
+                          <img class="icon" src="./image/plp/down.svg" alt="down">
+                        </div>
+                      </div>
+                      <ul class="content">
+                        <li class="content__item"><a class="content__link" href="#!">Big</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Small</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Medium</a></li>
+                        
+                      </ul>
+                      <div class="menu">
+                        <h4>Designer</h4>
+                        <div class="menu__icons">
+                          <img class="icon"  src="./image/plp/down.svg" alt="down">
+                          
+                        </div>
+                      </div>
+                      <ul class="content">
+                        <li class="content__item"><a class="content__link" href="#!">Cucci</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Klara</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Jenifer</a></li>
+                        
+                      </ul>
+                      <div class="menu">
+                        <h4>Sustainable brands</h4>
+                        <div class="menu__icons">
+                          <img  class="icon" src="./image/plp/down.svg" alt="down">
+                       
+                        </div>
+                      </div>
+                      <ul class="content">
+                        <li class="content__item"><a class="content__link" href="#!">Cucci</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Klara</a></li>
+                       
+                        
+                      </ul>
+                      <div class="menu">
+                        <h4>sustainability</h4>
+                        <div class="menu__icons">
+                          <img  class="icon" src="./image/plp/down.svg" alt="down">
+                          
+                        </div>
+                      </div>
+                      <ul class="content">
+                        <li class="content__item"><a class="content__link" href="#!">Cucci</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">Klara</a></li>
+                       
+                      </ul>
+                      <div class="menu">
+                        <h4>Price</h4>
+                        <div class="menu__icons">
+                          <img  class="icon" src="./image/plp/down.svg" alt="down">
+                         
+                        </div>
+                      </div>
+                      <ul class="content">
+                        <li class="content__item"><a class="content__link" href="#!">$30.00</a></li>
+                        <li class="content__item"><a class="content__link" href="#!">$20.00</a></li>
+                       
+                      </ul>
+
+
+                    </div>
+
+                    <div class="product__list">
+
+                    </div>
+                </div>
+
+                <div class="product__pagination">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <img src="./image/plp/arrow-to-right.svg" alt="arrow">
+                </div>
+
+            </div>     
+        </section>
+    </main>
+ 
+  
+
+    <footer class="footer">
+     <div class="container ">
+      <div class="footer__wrapper">
+
+     
+        <h2 class="footer__title">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </h2>    
+        
+        <div class="footer__form">
+          <h4>Sign up for toward updates</h4>
+          <p>Receiving our newsletter with access to our latest collections, events and news.</p>
+
+          <div class="form__input">
+            <input type="email" placeholder="Email Address">
+            <img src="./image/home/arrow-right-white.svg" alt="arrow-right">
+          </div>
+
+          <div class="footer__socials">
+            <a href="#!"><img src="./image/home/instagram.svg" alt="instagram"></a>
+            <a href="#!"><img src="./image/home/facebook.svg" alt="facebook"></a>
+          </div> 
+
+         
+        </div>
+
+        <div class="footer__nav">
+
+          <ul class="footer__nav__list">
+            <h4 class="footer__nav__title">Customer Care</h4>
+            <li><a href="#!">FAQ</a></li>
+            <li><a href="#!">Shipping & Returns</a></li>
+            <li><a href="#!">Contact</a></li>
+          </ul>
+          <ul class="footer__nav__list">
+            <h4 class="footer__nav__title">Company</h4>
+            <li><a href="#!">About Us</a></li>
+            <li><a href="#!">Journal</a></li>
+            <li><a href="#!">Press</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+       <p class="footer__brand">© 2021 Toward Brand</p>
+
+     </div>   
+     
+    </footer>
+
+
+
+
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

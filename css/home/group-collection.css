@@ -4,7 +4,7 @@
 }
 .group-collection__subtitle {
   font-weight: 500;
-  font-size: 10px;
+  font-size: 1.0rem;
   line-height: 172.69%;
   text-align: center;
   letter-spacing: 0.205em;
@@ -13,7 +13,7 @@
 }
 .group-collection__title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 }
 
 .group-collection__slider {
-  height: 720px;
+  height: 72.0rem;
 }
 .group-collection__slider .swiper {
   width: 100%;
@@ -50,15 +50,15 @@
 }
 
 .group-collection__slider .swiper-slide {
-  height: calc((100% - 40px) / 2) !important;
-  width: 213px !important;
-  height: 365px;
+  height: calc((100% - 4.0rem) / 2) !important;
+  width: 21.3rem !important;
+  height: 36.5rem;
 }
 .group-collection__slider .swiper-button-next {
-  right: -5px;
+  right: -.5rem;
 }
 .group-collection__slider .swiper-button-prev {
-  left: -5px;
+  left: -.5rem;
 }
 .group-collection__banner a {
   font-weight: 700;
@@ -81,17 +81,17 @@
     grid-template-columns: 100%;
   }
   .group-collection__title {
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 110%;
     margin-bottom: 1.6rem;
   }
   .group-collection__slider {
-    height: 286px;
+    height: 28.6rem;
     margin-top: 1.6rem; 
   }
   .group-collection__slider .swiper-slide {
    height: 100% !important;
-   width: 142px !important;
+   width: 14.2rem !important;
   }
   .group-collection__grid--reverse .group-collection__banner {
     grid-column-start: 1;

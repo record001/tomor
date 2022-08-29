@@ -5,3 +5,6 @@
 @import "./home/banner-slider.css";
 @import "./home/designers.css";
 @import "./home/blog.css";
+.swiper-button-disabled {
+    display: none !important;
+}

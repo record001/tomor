@@ -5,7 +5,10 @@ const PRODUCT_LIST = [
         title: "Gucci",
         subtitle:"Zipper Mini Dress",
         price: "$879.00",
-        heart: true
+        heart: true,
+        recicle:true,
+        leaf:true,
+        rabbit:true,
     },
     {
         id:2,
@@ -13,7 +16,11 @@ const PRODUCT_LIST = [
         title: "Alexander wang",
         subtitle:"Mix Pattern Leather Jacket",
         price: "$879.00",
-        heart: false
+        heart: false,
+        recicle:true,
+        leaf:true,
+        rabbit:false,
+       
     },
     {
         id:3,
@@ -21,30 +28,43 @@ const PRODUCT_LIST = [
         title: "Gucci",
         subtitle:"Zipper Mini Dress",
         price: "$879.00",
-        heart: false
+        heart: false,
+        recicle:true,
+        leaf:true,
+        rabbit:true,
+        
     },
     {
-        id:1,
+        id:4,
         image:"./image/home/dress-red.png",
         title: "Gucci",
         subtitle:"Zipper Mini Dress",
         price: "$879.00",
-        heart: true
+        heart: true,
+        recicle:false,
+        leaf:false,
+        rabbit:true,
     },
     {
-        id:2,
+        id:5,
         image:"./image/home/dress-blue.png",
         title: "Alexander wang",
         subtitle:"Mix Pattern Leather Jacket",
         price: "$879.00",
-        heart: false
+        heart: false,
+        recicle:false,
+        leaf:false,
+        rabbit:false,
     },
     {
-        id:3,
+        id:6,
         image:"./image/home/dress-red.png",
         title: "Gucci",
         subtitle:"Zipper Mini Dress",
         price: "$879.00",
-        heart: false
+        heart: false,
+        recicle:false,
+        leaf:false,
+        rabbit:false,
     },
 ]

@@ -35,19 +35,16 @@ new Swiper(".groupCollectionSwiper", {
     0: {
       spaceBetween: 20,
       slidesPerView: 2,
-
       grid: {
         rows: 1,
       },
     },
     600: {
       slidesPerView: 2,
-      spaceBetween: 40,
-      
+      spaceBetween: 40,      
     },
     
   },
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
