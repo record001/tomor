@@ -53,7 +53,7 @@ function renderProducts() {
           </div>         
     
         `;
-        pair__slider_liked.innerHTML += `
+    pair__slider_liked.innerHTML += `
          <div class="swiper-slide new-collection__card">
             <img class="heart" src="./image/home/heart-empty.svg" alt="heart">
              <img class="card__img" src="./image/home/dress-black.png" alt="dress-blue">
@@ -113,3 +113,34 @@ new Swiper(".pairSwiperLiked", {
     },
   },
 });
+
+
+// selected-color-text
+
+let selColorText = document.querySelector(".selected-color-text")
+
+let colorsArr = document.querySelectorAll(".colors__list input")
+colorsArr.forEach(item => {
+  item.addEventListener("click", e=> {
+    if(item.checked){
+      selColorText.textContent = e.target.id
+    }
+  })
+})
+
+// tab
+
+let hero_tab = document.querySelectorAll(".hero__tab");
+let tab_content = document.querySelector(".tab__content");
+
+
+hero_tab.forEach((tab, index)=>{
+  tab.addEventListener("click", e=>{
+
+    document.querySelector(".hero__tab.tab__active")?.classList.remove("tab__active")
+
+    tab.classList.add("tab__active")
+    tab_content.textContent = TAB_CONTENT[index].text
+  })
+})
+

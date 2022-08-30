@@ -5,7 +5,7 @@ const PRODUCT_LIST = [
         title: "Gucci",
         subtitle:"Zipper Mini Dress",
         price: "$879.00",
-        heart: true,
+        heart: false,
         recicle:true,
         leaf:true,
         rabbit:true,
@@ -40,7 +40,7 @@ const PRODUCT_LIST = [
         title: "Gucci",
         subtitle:"Zipper Mini Dress",
         price: "$879.00",
-        heart: true,
+        heart: false,
         recicle:false,
         leaf:false,
         rabbit:true,
@@ -68,3 +68,24 @@ const PRODUCT_LIST = [
         rabbit:false,
     },
 ]
+
+
+
+const TAB_CONTENT = [
+    {
+      id:1,
+      text:"1--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.1"
+    },
+    {
+      id:2,
+      text:"2--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.2"
+    },
+    {
+      id:3,
+      text:"3--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.3"
+    },
+    {
+      id:4,
+      text:"4--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.4"
+    },
+  ]

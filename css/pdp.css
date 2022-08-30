@@ -161,18 +161,20 @@ main {
   justify-content: space-between;
   margin-bottom: 1.6rem;
 }
-.hero__list li {
+.hero__tab {
   font-weight: 400;
   font-size: 14px;
   line-height: 159.5%;
   color: #000000;
   cursor: pointer;
   opacity: 0.3;
+  padding-bottom: 0.4rem;
 }
-.hero__list li:nth-of-type(1) {
+.tab__active {
   opacity: 1;
-  text-decoration: underline;
+  border-bottom: 1px solid #000;
 }
+
 .sustainability {
   border: 1px solid #f2f2f2;
   padding: 2.4rem 1rem;
@@ -205,9 +207,49 @@ main {
   text-align: center;
   color: #000000;
 }
+#check {
+  display: none;
+}
+#check:checked + .checkbox::before {
+  background-image: url("../image/checkbox.svg");
+
+}
+.checkbox::before {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 1px;
+
+}
+.checkbox {
+ position: relative;
+ margin-left: 2.4rem;
+ cursor: pointer;
+
+}
 
 .colors {
   display: flex;
+}
+.colors__list {
+  position: relative;
+}
+.white {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  border: 1px solid #8F8F8F;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  pointer-events: none;
+
+}
+.selected-color-text {
+  text-transform: capitalize;
 }
 .colors input {
   display: none;
@@ -221,20 +263,23 @@ main {
   height: 1.6rem;
   border-radius: 50%;
   margin-right: 0.7rem;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
 }
-.colors input:checked + label::before {
-  border: 2px solid #fff;
+
+.colors input:checked ~ label::before {
+  border: 1px solid #fff !important;
   outline: 1px solid #000;
 }
 #one::before {
-  background-color: rgb(148, 145, 141);
+  background-color: white;
+  /* border: 2px solid #8F8F8F; */
+
 }
 #two::before {
   background-color: #000;
 }
 #three::before {
-  background-color: brown;
+  background-color: #C19191;
 }
 
 .new-collection__card {
@@ -350,9 +395,7 @@ main {
   .size {
     margin-top: 2.4rem;
   }
-  #check {
-    display: none;
-  }
+ 
   #check + label {
     opacity: 0.5;
   }

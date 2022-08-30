@@ -186,7 +186,9 @@ main {
 .heart {
   width: 1.6rem;
   height: 1.6rem;
+  cursor: pointer;
 }
+
 .card__img {
   width: 90%;
 }
@@ -217,13 +219,35 @@ li {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: aqua;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   cursor: pointer;
  
 }
 .color__item:nth-of-type(1) .checkmark {
-    background-color: brown;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.color__item {
+  position: relative;
+}
+.color__item:nth-of-type(1) .color::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid #8F8F8F;
+  border-radius: 50% ;
+  top: 1.1px;
+  left: 0.8px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.color__item:nth-of-type(1) .checkmark {
+    background-color: white;
+    width: 1.5rem;
+  height: 1.5rem;
 }
 .color__item:nth-of-type(2) .checkmark {
     background-color: black;
@@ -232,8 +256,8 @@ li {
     background-color: purple;
 }
 .color-input:checked + .checkmark {
-    border: 2px solid #fff;
-    outline: 2px solid black;
+    border: 1px solid #fff;
+    outline: 1px solid black;
 }
 
 
@@ -256,6 +280,46 @@ li {
   line-height: 159.5%;
   color: var(--dark);
   cursor: pointer;
+}
+.product__pagination span:nth-of-type(1) {
+
+  border-bottom: 1px solid #000;
+}
+
+.heart-modal-blur {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.537);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.heart-modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  width: 375px;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+ 
+}
+#heart-close {
+  position: fixed;
+  right: 25px;
+  top: 15px;
+  font-size: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
+.db {
+  display: block;
 }
 
 /* media */
